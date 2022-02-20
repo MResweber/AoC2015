@@ -8,8 +8,12 @@ public class AoC2015 {
 		
 		switch (day){
 			case "1":
-				DayOne d = new DayOne();
-				d.run(inputPath);
+				DayOne one = new DayOne();
+				one.run(inputPath);
+				break;
+			case "2":
+				DayTwo two = new DayTwo();
+				two.run(inputPath);
 				break;
 		}
 	}
