@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class DayTwo {
+public class DayTwo extends Day{
 
 	public void run (String inputPath) {
 		File inputFile = new File(inputPath + "-1");

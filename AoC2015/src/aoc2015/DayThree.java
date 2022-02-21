@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.HashMap;
 
-public class DayThree {
+public class DayThree extends Day{
 
 	public void run (String inputPath) {
 		File inputFile = new File(inputPath + "-1");

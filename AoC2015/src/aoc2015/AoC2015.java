@@ -5,23 +5,20 @@ public class AoC2015 {
 	public static void main (String[] args) {
 		String day = args[0];
 		String inputPath = "inputs/input" + day;
+		Day prog;
 		
 		switch (day){
 			case "1":
-				DayOne one = new DayOne();
-				one.run(inputPath);
+				prog = new DayOne();
+				prog.run(inputPath);
 				break;
 			case "2":
-				DayTwo two = new DayTwo();
-				two.run(inputPath);
+				prog = new DayTwo();
+				prog.run(inputPath);
 				break;
 			case "3":
-				DayThree three = new DayThree();
-				three.run(inputPath);
-				break;
-			case "4":
-				DayThree four = new DayThree();
-				four.run(inputPath);
+				prog = new DayThree();
+				prog.run(inputPath);
 				break;
 		}
 	}
