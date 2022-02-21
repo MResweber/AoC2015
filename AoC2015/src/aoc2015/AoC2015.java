@@ -19,6 +19,10 @@ public class AoC2015 {
 				DayThree three = new DayThree();
 				three.run(inputPath);
 				break;
+			case "4":
+				DayThree four = new DayThree();
+				four.run(inputPath);
+				break;
 		}
 	}
 }

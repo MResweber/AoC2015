@@ -19,23 +19,31 @@ public class DayThree {
 		String input = inputScanner.nextLine();
 		
 		HashMap<String, Boolean> map = new HashMap<String, Boolean>();
+		HashMap<String, Boolean> map2 = new HashMap<String, Boolean>();
+		int[] pos = {0, 0};
 		int[] santaPos = {0, 0};
 		int[] roboPos = {0, 0};
 		int visited = 1;
+		int visited2 = 1;
 		
 		map.put("0,0", true);
+		map2.put("0,0", true);
 		
 		for (int i = 0; i < input.length(); i++) {
 			char curChar = input.charAt(i);
+			
+			visited += move(pos, map, curChar);
+			
 			if (i % 2 == 0) {
-				visited += move(santaPos, map, curChar);
+				visited2 += move(santaPos, map2, curChar);
 			}
 			else {
-				visited += move(roboPos, map, curChar);
+				visited2 += move(roboPos, map2, curChar);
 			}
 		}
-		
+
 		System.out.println("Part 1 - Houses Visited: " + visited);
+		System.out.println("Part 2 - Houses Visited: " + visited2);
 	}
 	
 	private int move (int[] pos, HashMap<String, Boolean> map, char curChar) {
