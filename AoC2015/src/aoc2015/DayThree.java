@@ -1,21 +1,14 @@
 package aoc2015;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.util.HashMap;
 
 public class DayThree extends Day{
 
-	public void run (String inputPath) {
-		File inputFile = new File(inputPath + "-1");
-		Scanner inputScanner = null;
-		try {
-			inputScanner = new Scanner(inputFile);
-		} catch (FileNotFoundException e) {
-			System.out.println("No input file for day 1");
-			System.exit(0);
-		}
+	public DayThree(String inputPath) {
+		super(inputPath);
+	}
+
+	public void run () {
 		String input = inputScanner.nextLine();
 		
 		HashMap<String, Boolean> map = new HashMap<String, Boolean>();

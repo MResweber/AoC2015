@@ -9,16 +9,20 @@ public class AoC2015 {
 		
 		switch (day){
 			case "1":
-				prog = new DayOne();
-				prog.run(inputPath);
+				prog = new DayOne(inputPath);
+				prog.run();
 				break;
 			case "2":
-				prog = new DayTwo();
-				prog.run(inputPath);
+				prog = new DayTwo(inputPath);
+				prog.run();
 				break;
 			case "3":
-				prog = new DayThree();
-				prog.run(inputPath);
+				prog = new DayThree(inputPath);
+				prog.run();
+				break;
+			case "4":
+				prog = new DayFour(inputPath);
+				prog.run();
 				break;
 		}
 	}

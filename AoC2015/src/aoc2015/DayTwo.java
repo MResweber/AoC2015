@@ -1,21 +1,12 @@
 package aoc2015;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
 public class DayTwo extends Day{
 
-	public void run (String inputPath) {
-		File inputFile = new File(inputPath + "-1");
-		Scanner inputScanner = null;
-		try {
-			inputScanner = new Scanner(inputFile);
-		} catch (FileNotFoundException e) {
-			System.out.println("No input file for day 2");
-			System.exit(0);
-		}
-		
+	public DayTwo(String inputPath) {
+		super(inputPath);
+	}
+
+	public void run () {
 		int totalPaper = 0;
 		int totalRibbon = 0;
 		while (inputScanner.hasNext()) {
