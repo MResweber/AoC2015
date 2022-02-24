@@ -24,6 +24,10 @@ public class AoC2015 {
 				prog = new DayFour(inputPath);
 				prog.run();
 				break;
+			case "5":
+				prog = new DayFive(inputPath);
+				prog.run();
+				break;
 		}
 	}
 }
