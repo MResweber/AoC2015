@@ -4,7 +4,7 @@ public class AoC2015 {
 
 	public static void main (String[] args) {
 		String day = args[0];
-		String inputPath = "inputs/input" + day;
+		String inputPath = "inputs/input" + day + ".txt";
 		Day prog;
 		
 		switch (day){
@@ -26,6 +26,10 @@ public class AoC2015 {
 				break;
 			case "5":
 				prog = new DayFive(inputPath);
+				prog.run();
+				break;
+			case "6":
+				prog = new DaySix(inputPath);
 				prog.run();
 				break;
 		}
